@@ -1,4 +1,5 @@
 # FrostyFriday
 Frosty Friday solutions
 
-```code block
+```code block```
+
