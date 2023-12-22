@@ -1,5 +1,0 @@
-PUT file://manifest.yml @my_first_app.stage_content.app_stage overwrite=true auto_compress=false;
-PUT file://README.md @my_first_app.stage_content.app_stage overwrite=true auto_compress=false;
-PUT file://scripts/setup.sql @my_first_app.stage_content.app_stage/scripts overwrite=true auto_compress=false;
-PUT file://streamlit/streamlit.py @my_first_app.stage_content.app_stage/streamlit overwrite=true auto_compress=false;
-PUT file://streamlit/environment.yml @my_first_app.stage_content.app_stage/streamlit overwrite=true auto_compress=false;
