@@ -32,3 +32,12 @@ date_of_check
 from testing_data
 order by product, date_of_check
 ;
+
+
+-- new solution using ASOF join
+select T.*, S.*
+from testing_data T
+asof join (select * from testing_data where stock_amount is not null) S
+match_condition (T.date_of_check >= S.date_of_check)
+on T.product = S.product
+order by T.product, T.date_of_check;
