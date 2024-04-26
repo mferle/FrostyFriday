@@ -51,6 +51,7 @@ CREATE OR REPLACE API INTEGRATION git_api_integration
   API_ALLOWED_PREFIXES = ('https://github.com/FrostyFridays')
   ENABLED = TRUE;
 
+-- create the git repository
 CREATE OR REPLACE GIT REPOSITORY ff91
   API_INTEGRATION = git_api_integration
   ORIGIN = 'https://github.com/FrostyFridays/FF_week_91.git';
